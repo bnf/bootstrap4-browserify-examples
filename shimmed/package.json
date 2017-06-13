@@ -2,6 +2,7 @@
   "name": "bs4-browserify-shimmed",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "js": "browserify index.js -p bundle-collapser/plugin -o bundle.js"

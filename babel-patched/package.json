@@ -2,6 +2,7 @@
   "name": "bs4-browserify-babel-patched",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "js": "browserify index.js -o bundle.js"

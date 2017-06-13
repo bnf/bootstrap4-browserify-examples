@@ -2,6 +2,7 @@
   "name": "bs4-browserify-babel",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "js": "browserify index.js -g [ babelify --presets [ es2015 ] --no-babelrc --only 'bootstrap/**/*.js' ] -o bundle.js"

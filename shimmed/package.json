@@ -12,7 +12,6 @@
     "transform": [ "browserify-shim" ]
   },
   "browser": {
-    "jquery": "./node_modules/jquery/dist/jquery.js",
     "bootstrap-util": "./node_modules/bootstrap/js/dist/util.js",
     "bootstrap-alert": "./node_modules/bootstrap/js/dist/alert.js",
     "bootstrap-button": "./node_modules/bootstrap/js/dist/button.js",
@@ -26,8 +25,6 @@
     "bootstrap-popover": "./node_modules/bootstrap/js/dist/popover.js"
   },
   "browserify-shim": {
-    "jquery": "$",
-    "popper.js": "Popper",
     "bootstrap-util":      { "depends": [ "jquery:jQuery" ], "exports": "Util" },
     "bootstrap-alert":     { "depends": [ "jquery:jQuery", "bootstrap-util:Util" ] },
     "bootstrap-button":    { "depends": [ "jquery:jQuery", "bootstrap-util:Util" ] },

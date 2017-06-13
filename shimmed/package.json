@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "js": "browserify index.js -o bundle.js"
+    "js": "browserify index.js -p bundle-collapser/plugin -o bundle.js"
   },
   "author": "",
   "license": "ISC",
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "browserify": "^14.4.0",
-    "browserify-shim": "^3.8.14"
+    "browserify-shim": "^3.8.14",
+    "bundle-collapser": "^1.2.1"
   }
 }

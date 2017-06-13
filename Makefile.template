@@ -1,0 +1,7 @@
+all: bundle.js
+
+node_modules/: package.json
+	npm install
+
+bundle.js: index.js package.json node_modules/
+	npm run js

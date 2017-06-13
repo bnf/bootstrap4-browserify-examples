@@ -1,0 +1,51 @@
+{
+  "name": "bs4-test-shimed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js": "browserify index.js -o bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserify": {
+    "transform": [ "browserify-shim" ]
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "bootstrap-util": "./node_modules/bootstrap/js/dist/util.js",
+    "bootstrap-alert": "./node_modules/bootstrap/js/dist/alert.js",
+    "bootstrap-button": "./node_modules/bootstrap/js/dist/button.js",
+    "bootstrap-carousel": "./node_modules/bootstrap/js/dist/carousel.js",
+    "bootstrap-collapse": "./node_modules/bootstrap/js/dist/collapse.js",
+    "bootstrap-dropdown": "./node_modules/bootstrap/js/dist/dropdown.js",
+    "bootstrap-modal": "./node_modules/bootstrap/js/dist/modal.js",
+    "bootstrap-scrollspy": "./node_modules/bootstrap/js/dist/scrollspy.js",
+    "bootstrap-tab": "./node_modules/bootstrap/js/dist/tab.js",
+    "bootstrap-tooltip": "./node_modules/bootstrap/js/dist/tooltip.js",
+    "bootstrap-popover": "./node_modules/bootstrap/js/dist/popover.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "popper.js": "Popper",
+    "bootstrap-util":      { "depends": [ "jquery:jQuery" ], "exports": "Util" },
+    "bootstrap-alert":     { "depends": [ "jquery:jQuery", "bootstrap-util:Util" ] },
+    "bootstrap-button":    { "depends": [ "jquery:jQuery", "bootstrap-util:Util" ] },
+    "bootstrap-carousel":  { "depends": [ "jquery:jQuery", "bootstrap-util:Util" ] },
+    "bootstrap-collapse":  { "depends": [ "jquery:jQuery", "bootstrap-util:Util" ] },
+    "bootstrap-dropdown":  { "depends": [ "jquery:jQuery", "bootstrap-util:Util", "popper.js:Popper" ] },
+    "bootstrap-modal":     { "depends": [ "jquery:jQuery", "bootstrap-util:Util" ] },
+    "bootstrap-scrollspy": { "depends": [ "jquery:jQuery", "bootstrap-util:Util" ] },
+    "bootstrap-tab":       { "depends": [ "jquery:jQuery", "bootstrap-util:Util" ] },
+    "bootstrap-tooltip":   { "depends": [ "jquery:jQuery", "bootstrap-util:Util", "popper.js:Popper" ], "exports": "Tooltip" },
+    "bootstrap-popover":   { "depends": [ "jquery:jQuery", "bootstrap-util:Util", "bootstrap-tooltip:Tooltip" ] }
+  },
+  "dependencies": {
+    "bootstrap": "github:twbs/bootstrap#v4-dev",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "browserify-shim": "^3.8.14"
+  }
+}

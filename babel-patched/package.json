@@ -1,0 +1,20 @@
+{
+  "name": "bs4-browserify-babel-patched",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js": "browserify index.js -g [ babelify --presets [ es2015 ] --no-babelrc --only 'bootstrap/**/*.js' ] -o bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "github:bnf/bootstrap#67e52b34d12a4680b22942bcf4f62c717f5f07af",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "babelify": "^7.3.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

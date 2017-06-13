@@ -1,4 +1,4 @@
-MODULES=babel full shimmed
+MODULES=babel-patched babel full shimmed
 
 .PHONY: all $(MODULES)
 

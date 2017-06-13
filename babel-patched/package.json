@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "js": "browserify index.js -g [ babelify --presets [ es2015 ] --no-babelrc --only 'bootstrap/**/*.js' ] -o bundle.js"
+    "js": "browserify index.js -o bundle.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "github:bnf/bootstrap#67e52b34d12a4680b22942bcf4f62c717f5f07af",
+    "bootstrap": "github:bnf/bootstrap#f4b135d18fdfc1b488d58be99e45c343e780fe6f",
     "jquery": "^3.2.1"
   },
   "devDependencies": {

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "js": "browserify . -g [ babelify --presets [ es2015 stage-0 ] --no-babelrc --only 'bootstrap/**/*.js' ] -o bundle.js",
+    "js": "browserify . -g [ babelify --presets [ es2015 stage-0 ] --no-babelrc --only 'bootstrap/**/*.js' ] -g browserify-shim -o bundle.js",
     "js-non-working": "browserify . -o bundle.js"
   },
   "author": "",
@@ -23,6 +23,24 @@
       ]
     ]
   },
+  "browser": {
+    "bootstrap-util": "./node_modules/bootstrap/js/src/util.js",
+    "bootstrap-carousel": "./node_modules/bootstrap/js/src/carousel.js"
+  },
+
+  "browserify-shim": {
+    "bootstrap-util": {
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "bootstrap-carousel": {
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+
+  },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
     "bootstrap": "github:twbs/bootstrap#v4-dev",
@@ -30,6 +48,7 @@
   },
   "devDependencies": {
     "browserify": "^14.4.0",
+    "browserify-shim": "^3.8.14",
     "babelify": "^7.3.0"
   }
 }

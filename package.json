@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "js": "browserify . -g [ babelify --presets [ es2015 stage-0 ] --no-babelrc --only 'bootstrap/**/*.js' ] -o bundle.js"
+    "js": "browserify . -g [ babelify --presets [ es2015 ] --no-babelrc --only 'bootstrap/**/*.js' ] -o bundle.js"
   },
   "author": "",
   "license": "ISC",

@@ -8,5 +8,5 @@
 
 ## Disadvantages
 
- * Full bootstrap.js, you probably don't need everything
+ * Full bootstrap.js, you probably don't need everything => overhead
  * global jQuery and Popper.js exposed as globals (window.jQuery, window.Popper) required

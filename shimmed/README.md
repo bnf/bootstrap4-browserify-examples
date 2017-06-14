@@ -4,6 +4,7 @@
  * semi-automatic dependency resolution as defined in package.json
  * No babel transpiler required
    * => fast build
+ * supports using only those modules that you need (smaller builds)
 
 ## Disadvantages
 

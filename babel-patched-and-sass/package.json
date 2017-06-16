@@ -1,0 +1,32 @@
+{
+  "name": "bs4-browserify-babel-patched",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "js": "browserify index.js -o bundle.js",
+    "css-compile": "node-sass --output-style expanded --source-map true --precision 6 style.scss style.css",
+    "css-minify": "cleancss --level 1 --source-map --output style.min.css style.css",
+    "css-prefix": "postcss --config node_modules/bootstrap/build/ --replace style.css",
+    "css": "npm run css-compile && npm run css-prefix && npm run css-minify",
+    "build": "npm run css && npm run js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "github:bnf/bootstrap#f4b135d18fdfc1b488d58be99e45c343e780fe6f",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "clean-css-cli": "^4.1.4",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.0",
+    "postcss-flexbugs-fixes": "^3.0.0",
+    "uglify-js": "^3.0.15"
+  }
+}

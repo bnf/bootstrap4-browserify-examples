@@ -1,4 +1,4 @@
-MODULES=babel-patched babel full shimmed
+MODULES=babel-patched babel full shimmed webpack rollup no-babel-bs-patched
 
 .PHONY: all $(MODULES)
 

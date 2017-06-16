@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "github:bnf/bootstrap#f4b135d18fdfc1b488d58be99e45c343e780fe6f",
+    "bootstrap": "github:bnf/bootstrap#b6014e2fffa5898187e5781de6617f2b891c5ab7",
     "jquery": "^3.2.1"
   },
   "devDependencies": {

@@ -1,0 +1,21 @@
+{
+  "name": "bs4-browserify-babel-patched",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "js": "webpack --optimize-minimize ./index.js bundle.js --display-reasons --display-used-exports"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "github:bnf/bootstrap#380fbbc69ce2e7dbc8f5e6ca50228d49fc77a09f",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "webpack": "^2.6.1"
+  }
+}

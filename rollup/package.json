@@ -1,0 +1,23 @@
+{
+  "name": "bs4-browserify-babel-patched",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "js": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "github:bnf/bootstrap#380fbbc69ce2e7dbc8f5e6ca50228d49fc77a09f",
+    "jquery": "^3.2.1",
+    "lodash-es": "^4.17.4",
+    "rollup": "^0.43.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  }
+}
